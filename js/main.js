@@ -216,10 +216,10 @@ function validateMessage(){
     }else{
         messageError.innerHTML = '<i>valid </i>';
         return true;
-        }   
+        }      
 }
-function validateform(){
-    if(!validatename() ||!validatemail() || !validatemessage()){
+function validateForm(){
+    if(!validateName() || ! validateEmail() || !validateMessage()){
         submitError.style.display = 'block';
         submitError.innerHTML = 'please fix error to submit';
         setTimeout(function(){submitError.style.display = 'none';},3000);
